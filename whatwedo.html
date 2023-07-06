@@ -1,0 +1,602 @@
+<!DOCTYPE html><html lang="en-US"><head>
+
+  <meta charset="utf-8" content="">
+  <meta http-equiv="X-UA-Compatible" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <!--  -->
+  <!--    Document Title-->
+  <!-- =============================================-->
+  <title>Yayasan Alamsyah Hanafiah</title>
+  <meta name="csrf-token" content="">
+  <!--  -->
+  <!--    Favicons-->
+  <!--    =============================================-->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/YAH_logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/YAH_logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/YAH_logo.png">
+  <link rel="shortcut icon" type="image/x-icon" href="images/YAH_logo.png">
+  <link rel="manifest" href="https://yah.or.id/img/YAH_logo.png">
+  <link rel="mask-icon" href="images/YAH_logo.png" color="#5bbad5">
+  <meta name="msapplication-TileImage" content="">
+  <meta name="theme-color" content="">
+  <!--  -->
+  <!--    Stylesheets-->
+  <!--    =============================================-->
+  <!-- Default stylesheets-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Template specific stylesheets-->
+  <link href="css/loaders.min.css" rel="stylesheet">
+  <link href="css/css.css" rel="stylesheet">
+  <link href="css/iconsmind.css" rel="stylesheet">
+  <link href="css/ionicons.min.css" rel="stylesheet">
+  <link href="css/hamburgers.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/owl.theme.default.min.css" rel="stylesheet">
+
+  <link href="css/remodal.css" rel="stylesheet">
+  <link href="css/remodal-default-theme.css" rel="stylesheet">
+  <link href="css/flexslider.css" rel="stylesheet">
+  <link href="css/lightbox.css" rel="stylesheet">
+  <!-- Main stylesheet and color file-->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+
+  <link href="css/sweetalert2.min.css" rel="stylesheet">
+
+  
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+
+  
+
+  <!-- Custom CSS -->
+  <style>
+    .item-list {
+        position: relative;
+
+
+    }
+
+    .item-list .description {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 1rem;
+        /* background-color: rgba(192, 192, 192, 0.3); */
+        /* background-color: rgb(29, 38, 60); */
+        background-color: rgb(255, 255, 255);
+        font-size: 12px;
+        text-align: justify;
+    }
+
+    .item-list .title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 1rem;
+        /* background-color: rgba(192, 192, 192, 0.3); */
+        background-color: rgb(29, 38, 60);
+        font-size: 15px;
+        text-align: center;
+
+    }
+
+
+    .item-list img {
+        margin: 50px 0;
+        height: 453px;
+    }
+
+    .title span,
+    .description span {
+        color: white;
+    }
+
+    .whatwedo {
+        position: relative;
+    }
+
+    .whatwedo .slick-prev {
+
+        position: absolute;
+        /* top: 50%; */
+        transform: translate(-50%, -50%);
+        left: 20px;
+        z-index: 9999;
+        background: #293755;
+
+        border-left: 0 solid transparent;
+        border-right: 15px solid #113463;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+
+    .whatwedo .slick-next {
+        position: absolute;
+        /* top: 50%; */
+        transform: translate(-50%, -50%);
+        right: 20px;
+        z-index: 9999;
+        background: #293755;
+    }
+
+    button {
+        margin: 0;
+        padding: 0;
+        background: none;
+        border: none;
+        border-radius: 0;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    .slide-arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 9999;
+        margin-top: -15px;
+        cursor: pointer;
+    }
+
+    .prev-arrow {
+        left: -40px;
+        width: 0;
+        height: 0;
+        border-left: 0 solid transparent;
+        border-right: 15px solid #113463;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+
+    .next-arrow {
+        right: -40px;
+        width: 0;
+        height: 0;
+        border-right: 0 solid transparent;
+        border-left: 15px solid #113463;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+
+    span.h4.text-center,
+    h4.text-center {
+        padding-left: 25px;
+        padding-right: 25px;
+        color: #fff
+    }
+
+    .item-list img {
+        margin: 5rem;
+    }
+
+    @media  only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        .container-whatwedo {
+            width: 95%;
+        }
+
+        .item-list .title h4 {
+            font-size: 12px;
+        }
+
+        .prev-arrow {
+            left: 0;
+        }
+
+        .next-arrow {
+            right: 0;
+        }
+
+        .my-slick img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .item-list img {
+            margin: 5rem;
+        }
+
+        .mobile-title .text-center,
+        .description .text-center p {
+            margin-bottom: 0 !important;
+        }
+    }
+</style>
+
+  <!--    JavaScripts-->
+  <!--    =============================================-->
+
+
+  <script>
+    var host = ROOTSITE = "https://yah.or.id";
+        var host = ROOTSITE2 = "https://yah.or.id/backend";
+  </script>
+
+  <script src="js/modernizr.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  
+  <script src="js/popper.min.js" crossorigin="anonymous">
+  </script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/TweenMax.min.js"></script>
+  <script src="js/ScrollToPlugin.min.js"></script>
+  <script src="js/CustomEase.min.js"></script>
+  <script src="js/config.js"></script>
+
+
+
+
+  <script src="js/remodal.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src="js/sweetalert2.all.min.js"></script>
+  <script src="js/sweet-alert.init.js"></script>
+  <script src="js/parsley.js"></script>
+  <script src="js/id.js"></script>
+
+  <script src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script>
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+        });
+  </script>
+</head>
+
+<body data-spy="scroll" data-target=".inner-link" data-offset="60">
+
+  <main>
+    
+    <div class="loading"></div>
+
+    <style>
+    @media  only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        .header-nav {
+            padding-left: 0 !important;
+        }
+    }
+</style>
+
+<div class="sticky-top">
+
+    <section class="background-primary py-3 d-none d-sm-block header-top-section" style="display: block !important">
+        <div class="container header-top">
+            <nav role="navigation">
+                <ul class="header-nav">
+                    <li>contact@yah.or.id</li>
+                    <li>|</li>
+                                        <li> <a href="/">Sign In</a></li>
+                                    </ul>
+            </nav>
+        </div>
+        <!--/.container-->
+    </section>
+    <div class="znav-white znav-container navbar-elixir" id="znav-container">
+        <div class="container" style="z-index: 0 !important">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand overflow-hidden pr-3" href="/">
+                    <img src="images/YAH_logo.png" width="100vw" alt="" style="max-width: 80% !important">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="hamburger hamburger--emphatic">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav fs-0 fw-700">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/">Who We Are</a>
+                        </li>
+
+                        <li>
+                            <a href="/">What We Do</a>
+                        </li>
+                        <li>
+                            <!-- <a href="/">News</a> -->
+                            <a href="/" target="blank">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="/">Contact Us</a>
+                        </li>
+                                                <li><a class="d-block" href="/">Join Us</a></li>
+                                                
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+    <section class="background-10 py-6">
+    <div class="container container-whatwedo">
+
+        <div class="whatwedo">
+
+            
+
+            <div class="my-slick">
+
+                
+                <div class="item item-list" style="display: flex; flex-flow: column;align-items: center;">
+                    <div class="title mobile-title">
+                        <span class="text-center">
+                            <h4 class="text-center"><b>Pod Event</b></h4>
+                        </span>
+                    </div>
+                    <div class="description">
+                        <span class="text-center"><p>Pod yang terdiri dari program YAH untuk volunteer dan umum, seperti data talk, meetup, dan DSW. Acara sharing session dengan beberapa expertise di dunia data<br></p></span>
+                    </div>
+                    <img src="images/1609077220_pod_event.jpg">
+                </div>
+                
+                <div class="item item-list" style="display: flex; flex-flow: column;align-items: center;">
+                    <div class="title mobile-title">
+                        <span class="text-center">
+                            <h4 class="text-center"><b>Pod Media</b></h4>
+                        </span>
+                    </div>
+                    <div class="description">
+                        <span class="text-center"><p>Salah satu program YAH yaitu datapods, tujuannya adalah menyediakan media Podcast untuk sharing mengenai data dari narasumber terpercaya.<br></p></span>
+                    </div>
+                    <img src="images/1609077264_pod_media.jpg">
+                </div>
+                
+                <div class="item item-list" style="display: flex; flex-flow: column;align-items: center;">
+                    <div class="title mobile-title">
+                        <span class="text-center">
+                            <h4 class="text-center"><b>Pod Melek</b></h4>
+                        </span>
+                    </div>
+                    <div class="description">
+                        <span class="text-center"><p>Pod yang terdiri dari program Melek Series dan Melek for Member. Program yang memberikan pelatihan secara gratis di bidang data untuk member YAH.<br></p></span>
+                    </div>
+                    <img src="images/1609077286_pod_melek.jpg">
+                </div>
+                
+                <div class="item item-list" style="display: flex; flex-flow: column;align-items: center;">
+                    <div class="title mobile-title">
+                        <span class="text-center">
+                            <h4 class="text-center"><b>Pod Riset</b></h4>
+                        </span>
+                    </div>
+                    <div class="description">
+                        <span class="text-center"><p>Program riset data yang hasilnya dipublikasikan ke sosial media dan medium YAH.<br></p></span>
+                    </div>
+                    <img src="images/1609077308_pod_riset.jpg">
+                </div>
+                
+                <div class="item item-list" style="display: flex; flex-flow: column;align-items: center;">
+                    <div class="title mobile-title">
+                        <span class="text-center">
+                            <h4 class="text-center"><b>Pod Kurikulum</b></h4>
+                        </span>
+                    </div>
+                    <div class="description">
+                        <span class="text-center"><p>Pod yang terdiri dari program Data Learning Series dan Data Curriculum, yaitu merangkum segala materi (dalam Bahasa/English) yang berkaitan dengan Alamsyah Hanafiah dan disusun dengan apik sehingga mudah dimengerti oleh para pemula di Alamsyah Hanafiah dan dipublikasikan di media sosial YAH.<br></p></span>
+                    </div>
+                    <img src="images/1609077331_pod_kurikulum.jpg">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    $(document).ready(function(){
+        $('.my-slick').slick({
+            prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+            nextArrow: '<button class="slide-arrow next-arrow"></button>',
+            dots: true,
+        });
+    });
+
+</script>
+
+
+    <style>
+    .medsos a:not(:first-child) {
+        margin-left: 1.5rem;
+    }
+
+    .medsos .col-auto {
+        background: radial-gradient(#020000, #771b1b00)
+    }
+
+    .headquarter p {
+        color: white;
+    }
+
+    @media  only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        .no-gutters {
+            margin-right: 0 !important;
+        }
+
+        .medsos a:last-child {
+            margin-left: 0 !important
+        }
+    }
+</style>
+
+<section style="background-color: #1d273c; padding: 2rem 0">
+    
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="background-primary color-white p-5 p-lg-6 radius-secondary mt-4" style="background-image:url(images/world-map-dark.png );background-position: 50% 20px;
+                        background-repeat: no-repeat;background-size: contain;">
+                    <h4 class="color-white fs-1 fs-lg-2 mb-1">Headquarter</h4>
+                    <div class="color-white mt-4 headquarter"><p class="p1" style="margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: &quot;Helvetica Neue&quot;;">RAV Office</p><p class="p1" style="margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: &quot;Helvetica Neue&quot;;">Graha Mampang Lt 3 Suites 305</p><p class="p1" style="margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: &quot;Helvetica Neue&quot;;">Jl. Mampang Prapatan Raya No 100<br>Jakarta Selatan 12760</p></div>
+
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="background-primary color-white p-5 p-lg-6 radius-secondary mt-4" style="
+                background: red url(http://localhost/YAH_new/YAH/public/frontend/assets/images/YAH/1.png );
+                background-position: right;
+                background-repeat: no-repeat;
+                background-size: inherit;
+                
+                ">
+                    <h4 class="color-white fs-1 fs-lg-2 mb-1">Our Social Media</h4>
+
+                    <div style="display:flex; flex-flow:wrap" class="medsos mt-4">
+
+                        <a href="/" target="_blank">
+                            <div class="row mb-3 align-items-center no-gutters">
+                                <div class="col-auto">
+                                    <div class=" text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
+                                        <span class="w-100 fa fa-git color-white"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="/" target="_blank">
+                            <div class="row mb-3 align-items-center no-gutters">
+                                <div class="col-auto">
+                                    <div class=" text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
+                                        <span class="w-100 fa fa-twitter color-white"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="/" target="_blank">
+                            <div class="row mb-3 align-items-center no-gutters">
+                                <div class="col-auto">
+                                    <div class=" text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
+                                        <span class="w-100 fa fa-facebook color-white"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="/" target="_blank">
+                            <div class="row mb-3 align-items-center no-gutters">
+                                <div class="col-auto">
+                                    <div class=" text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
+                                        <span class="w-100 fa fa-linkedin color-white"></span></div>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="/" target="_blank">
+                            <div class="row mb-3 align-items-center no-gutters">
+                                <div class="col-auto">
+                                    <div class=" text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
+                                        <span class="w-100 fa fa-instagram color-white"></span></div>
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/.container-->
+</section>
+<section class="background-primary text-center py-4">
+    <div class="container">
+        <div class="row align-items-center" style="opacity: 0.85;">
+
+            <div class="col-sm-12 mt-3 mt-sm-0 text-center">
+                <p class="color-white lh-6 mb-0 fw-600">© Copyrights © 2019 All Rights Reserved by Alamsyah Hanafiah
+                    Indonesia.</p>
+            </div>
+
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/.container-->
+</section>    <!-- Custom JS -->
+      </main>
+
+  <style>
+    #return-to-top {
+      position: fixed;
+      z-index: 1000;
+      bottom: 20px;
+      right: 20px;
+      background: rgb(0, 0, 0);
+      background: rgb(3, 153, 60);
+      width: 50px;
+      height: 50px;
+      display: block;
+      text-decoration: none;
+      -webkit-border-radius: 35px;
+      -moz-border-radius: 35px;
+      border-radius: 35px;
+      display: none;
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+
+    #return-to-top i {
+      color: #fff;
+      margin: 0;
+      position: relative;
+
+      left: 19px;
+      top: 12px;
+      font-size: 19px;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+
+    #return-to-top:hover {
+      background: rgba(3, 153, 60, 0.9);
+    }
+
+    #return-to-top:hover i {
+      color: #fff;
+      top: 5px;
+    }
+  </style>
+  <a href="/" id="return-to-top"><i class="fa fa-arrow-up"></i></a>
+  <script>
+    $(window).scroll(function () {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+      $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+      $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+  });
+  $('#return-to-top').click(function () {      // When arrow is clicked
+    $('body,html').animate({
+      scrollTop: 0                       // Scroll to top of body
+    }, 500);
+  });
+  </script>
+  <script src="js/zanimation.js"></script>
+
+
+</body></html>

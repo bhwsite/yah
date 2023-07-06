@@ -1,0 +1,835 @@
+<!DOCTYPE html><html lang="en-US"><head>
+
+  <meta charset="utf-8" content="">
+  <meta http-equiv="X-UA-Compatible" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <!--  -->
+  <!--    Document Title-->
+  <!-- =============================================-->
+  <title>Yayasan Alamsyah Hanafiah</title>
+  <meta name="csrf-token" content="">
+  <!--  -->
+  <!--    Favicons-->
+  <!--    =============================================-->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/YAH_logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/YAH_logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/YAH_logo.png">
+  <link rel="shortcut icon" type="image/x-icon" href="images/YAH_logo.png">
+  <link rel="manifest" href="https://yah.or.id/img/YAH_logo.png">
+  <link rel="mask-icon" href="images/YAH_logo.png" color="#5bbad5">
+  <meta name="msapplication-TileImage" content="">
+  <meta name="theme-color" content="">
+  <!--  -->
+  <!--    Stylesheets-->
+  <!--    =============================================-->
+  <!-- Default stylesheets-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Template specific stylesheets-->
+  <link href="css/loaders.min.css" rel="stylesheet">
+  <link href="css/css.css" rel="stylesheet">
+  <link href="css/iconsmind.css" rel="stylesheet">
+  <link href="css/ionicons.min.css" rel="stylesheet">
+  <link href="css/hamburgers.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/owl.theme.default.min.css" rel="stylesheet">
+
+  <link href="css/remodal.css" rel="stylesheet">
+  <link href="css/remodal-default-theme.css" rel="stylesheet">
+  <link href="css/flexslider.css" rel="stylesheet">
+  <link href="css/lightbox.css" rel="stylesheet">
+  <!-- Main stylesheet and color file-->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+
+  <link href="css/sweetalert2.min.css" rel="stylesheet">
+
+  
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+
+  
+
+  <!-- Custom CSS -->
+  <style>
+    .division {
+        font-family: montserrat;
+        font-size: 2rem;
+        /* font-size: 102px; */
+        font-weight: 600;
+        color: #01054a;
+    }
+
+    #my-insta-feed {
+        max-width: 1080px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            display: flex;
+            align-items: center;
+            position: relative;
+            width: 50%;
+            background: white;
+
+            @media  only screen and (min-width: $lg) {
+                width: 25%;
+            }
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+    .teams {
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+
+    }
+
+
+    .teams .linkedin-team {
+        position: absolute;
+        bottom: -20%;
+        transition: bottom .5s;
+        left: 0;
+        /* background-color:rgba(156, 152, 152, 0.6); */
+        right: 0;
+
+
+    }
+
+    .teams:hover {
+        background: white;
+    }
+
+    .teams:hover .linkedin-team {
+        bottom: 10px;
+        transition: bottom .5s;
+
+
+    }
+
+    .linkedin-team a {
+        text-align: center;
+    }
+
+    .propercase {
+        text-transform: lowercase
+    }
+
+
+
+    .propercase::first-letter {
+        text-transform: uppercase;
+    }
+</style>
+
+  <!--    JavaScripts-->
+  <!--    =============================================-->
+
+
+  <script>
+    var host = ROOTSITE = "https://yah.or.id";
+        var host = ROOTSITE2 = "https://yah.or.id/backend";
+  </script>
+
+  <script src="js/modernizr.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  
+  <script src="js/popper.min.js" crossorigin="anonymous">
+  </script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/TweenMax.min.js"></script>
+  <script src="js/ScrollToPlugin.min.js"></script>
+  <script src="js/CustomEase.min.js"></script>
+  <script src="js/config.js"></script>
+
+
+
+
+  <script src="js/remodal.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src="js/sweetalert2.all.min.js"></script>
+  <script src="js/sweet-alert.init.js"></script>
+  <script src="js/parsley.js"></script>
+  <script src="js/id.js"></script>
+
+  <script src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script>
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+        });
+  </script>
+</head>
+
+<body data-spy="scroll" data-target=".inner-link" data-offset="60">
+
+  <main>
+    
+    <div class="loading"></div>
+
+    <style>
+    @media  only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        .header-nav {
+            padding-left: 0 !important;
+        }
+    }
+</style>
+
+<div class="sticky-top">
+
+    <section class="background-primary py-3 d-none d-sm-block header-top-section" style="display: block !important">
+        <div class="container header-top">
+            <nav role="navigation">
+                <ul class="header-nav">
+                    <li>contact@yah.or.id</li>
+                    <li>|</li>
+                                        <li> <a href="/">Sign In</a></li>
+                                    </ul>
+            </nav>
+        </div>
+        <!--/.container-->
+    </section>
+    <div class="znav-white znav-container navbar-elixir" id="znav-container">
+        <div class="container" style="z-index: 0 !important">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand overflow-hidden pr-3" href="/">
+                    <img src="images/YAH_logo.png" width="100vw" alt="" style="max-width: 80% !important">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="hamburger hamburger--emphatic">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav fs-0 fw-700">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/">Who We Are</a>
+                        </li>
+
+                        <li>
+                            <a href="/">What We Do</a>
+                        </li>
+                        <li>
+                            <!-- <a href="/">News</a> -->
+                            <a href="/" target="blank">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="/">Contact Us</a>
+                        </li>
+                                                <li><a class="d-block" href="/">Join Us</a></li>
+                                                
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+    <section class="background-primary" style="padding:2rem; margin-top: 60px;">
+    <div>
+        <div class="background-holder overlay" style="background-image:url(images/background-2.jpg);background-position: center bottom;"></div>
+        <!--/.background-holder-->
+        <div class="container">
+            <div class="row " data-inertia="{" weight":1.5}"="">
+                <div class="col-md-12 px-md-0 color-white" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                    <div class="overflow-hidden">
+                        <span class="color-white mb-0 zopacity" data-zanim="{" delay":0}"="" style="font-weight: bold; font-size: 30px;">Who We Are</span>
+                    </div>
+                    <div class="overflow-hidden color-white text-justify">
+                        <p><span style="color:#999999; font-family:Arial">Yayasan Alamsyah Hanafiah is a community founded and managed by Yayasan Alamsyah Hanafiah, registered in Kemenkumham as a legal entity (Yayasan/Foundation). YAH is a platform for social impact innovation with a mission to build collaborative data technology solver ecosystem for social welfare improvement. </span></p>
+<p><span style="color:#999999; font-family:Arial">We was established in May 2015 to champion data-driven technology in the spirit of public-private partnership as well as to engage both technical and non-technical audiences to practice the culture. We never say Alamsyah Hanafiah is a one-person work hence our network personas ranging from data scientist, web developer, lecturer, to media analyst that embody the process as a team-effort. We also present in several provinces like East Java, Central Java, Yogyakarta, and South Sulawesi.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/.container-->
+</section>
+<section class="background-11 text-center" style="padding: 2rem">
+    <div class="container">
+
+                <div class="row" style="display: flex; flex-flow: column">
+            
+            <div class="division mt-4 text-center propercase">VOLUNTEERS</div>
+            <div class="row">
+                
+                <div class="col mt-4 " style="min-height: 350px">
+                    <div class="pb-4 h-100 radius-secondary teams">
+                        <img class="mb-4 radius-tr-secondary radius-tl-secondary" style="max-width:200px; max-height: 200px" src="images/1655396741_Nabil_M_Badjri.jpg" alt="Profile Picture">
+                        <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                            <div class="overflow-hidden">
+                                <span data-zanim="{" delay":0}"="" style="font-size: 1rem; font-weight: 700; color:#2a3855">Nabil M. Badjri</span>
+                            </div>
+                            <div class="overflow-hidden mt-3">
+                                <h6 class="fw-400 color-7" data-zanim="{" delay":0.1}"="">YAH Chairman</h6>
+                            </div>
+                            
+                        </div>
+                        <div class="linkedin-team overflow-hidden">
+                            <a href="/" target="_blank" data-zanim="{" delay":0.2}"="">
+                                <div class=" text-center d-flex align-items-center flex-center" style="font-size: 2rem">
+                                    <span class="w-100 fa fa-linkedin"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col mt-4 " style="min-height: 350px">
+                    <div class="pb-4 h-100 radius-secondary teams">
+                        <img class="mb-4 radius-tr-secondary radius-tl-secondary" style="max-width:200px; max-height: 200px" src="images/1655396978_Bagoes_Suryo_Nugroho.JPG" alt="Profile Picture">
+                        <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                            <div class="overflow-hidden">
+                                <span data-zanim="{" delay":0}"="" style="font-size: 1rem; font-weight: 700; color:#2a3855">Bagoes Suryo Nugroho</span>
+                            </div>
+                            <div class="overflow-hidden mt-3">
+                                <h6 class="fw-400 color-7" data-zanim="{" delay":0.1}"="">VP of External Affairs</h6>
+                            </div>
+                            
+                        </div>
+                        <div class="linkedin-team overflow-hidden">
+                            <a href="/" target="_blank" data-zanim="{" delay":0.2}"="">
+                                <div class=" text-center d-flex align-items-center flex-center" style="font-size: 2rem">
+                                    <span class="w-100 fa fa-linkedin"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col mt-4 " style="min-height: 350px">
+                    <div class="pb-4 h-100 radius-secondary teams">
+                        <img class="mb-4 radius-tr-secondary radius-tl-secondary" style="max-width:200px; max-height: 200px" src="images/1655398679_Azizah.jpeg" alt="Profile Picture">
+                        <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                            <div class="overflow-hidden">
+                                <span data-zanim="{" delay":0}"="" style="font-size: 1rem; font-weight: 700; color:#2a3855">Nur Azizah</span>
+                            </div>
+                            <div class="overflow-hidden mt-3">
+                                <h6 class="fw-400 color-7" data-zanim="{" delay":0.1}"="">VP of Culture</h6>
+                            </div>
+                            
+                        </div>
+                        <div class="linkedin-team overflow-hidden">
+                            <a href="/" target="_blank" data-zanim="{" delay":0.2}"="">
+                                <div class=" text-center d-flex align-items-center flex-center" style="font-size: 2rem">
+                                    <span class="w-100 fa fa-linkedin"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col mt-4 " style="min-height: 350px">
+                    <div class="pb-4 h-100 radius-secondary teams">
+                        <img class="mb-4 radius-tr-secondary radius-tl-secondary" style="max-width:200px; max-height: 200px" src="images/1655398499_Ahmad_Nazhir_%281%29.jpg" alt="Profile Picture">
+                        <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                            <div class="overflow-hidden">
+                                <span data-zanim="{" delay":0}"="" style="font-size: 1rem; font-weight: 700; color:#2a3855">Ahmad Nazhir</span>
+                            </div>
+                            <div class="overflow-hidden mt-3">
+                                <h6 class="fw-400 color-7" data-zanim="{" delay":0.1}"="">VP of Operation</h6>
+                            </div>
+                            
+                        </div>
+                        <div class="linkedin-team overflow-hidden">
+                            <a href="/" target="_blank" data-zanim="{" delay":0.2}"="">
+                                <div class=" text-center d-flex align-items-center flex-center" style="font-size: 2rem">
+                                    <span class="w-100 fa fa-linkedin"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col mt-4 " style="min-height: 350px">
+                    <div class="pb-4 h-100 radius-secondary teams">
+                        <img class="mb-4 radius-tr-secondary radius-tl-secondary" style="max-width:200px; max-height: 200px" src="images/1655398539_Rahmat_Hidayat_Syahputra.JPG" alt="Profile Picture">
+                        <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                            <div class="overflow-hidden">
+                                <span data-zanim="{" delay":0}"="" style="font-size: 1rem; font-weight: 700; color:#2a3855">Rahmat H Syahputra</span>
+                            </div>
+                            <div class="overflow-hidden mt-3">
+                                <h6 class="fw-400 color-7" data-zanim="{" delay":0.1}"="">Head of Knowledge Management</h6>
+                            </div>
+                            
+                        </div>
+                        <div class="linkedin-team overflow-hidden">
+                            <a href="/" target="_blank" data-zanim="{" delay":0.2}"="">
+                                <div class=" text-center d-flex align-items-center flex-center" style="font-size: 2rem">
+                                    <span class="w-100 fa fa-linkedin"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col mt-4 " style="min-height: 350px">
+                    <div class="pb-4 h-100 radius-secondary teams">
+                        <img class="mb-4 radius-tr-secondary radius-tl-secondary" style="max-width:200px; max-height: 200px" src="images/1655397648_Ignatius_Sandyawan.jpeg" alt="Profile Picture">
+                        <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                            <div class="overflow-hidden">
+                                <span data-zanim="{" delay":0}"="" style="font-size: 1rem; font-weight: 700; color:#2a3855">Ignatius Sandyawan</span>
+                            </div>
+                            <div class="overflow-hidden mt-3">
+                                <h6 class="fw-400 color-7" data-zanim="{" delay":0.1}"="">Head of Research &amp; Development</h6>
+                            </div>
+                            
+                        </div>
+                        <div class="linkedin-team overflow-hidden">
+                            <a href="/" target="_blank" data-zanim="{" delay":0.2}"="">
+                                <div class=" text-center d-flex align-items-center flex-center" style="font-size: 2rem">
+                                    <span class="w-100 fa fa-linkedin"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col mt-4 " style="min-height: 350px">
+                    <div class="pb-4 h-100 radius-secondary teams">
+                        <img class="mb-4 radius-tr-secondary radius-tl-secondary" style="max-width:200px; max-height: 200px" src="images/1655398581_Dwita_Adila.jpg" alt="Profile Picture">
+                        <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                            <div class="overflow-hidden">
+                                <span data-zanim="{" delay":0}"="" style="font-size: 1rem; font-weight: 700; color:#2a3855">Dwita Adilah</span>
+                            </div>
+                            <div class="overflow-hidden mt-3">
+                                <h6 class="fw-400 color-7" data-zanim="{" delay":0.1}"="">Head of Strategic Partnership</h6>
+                            </div>
+                            
+                        </div>
+                        <div class="linkedin-team overflow-hidden">
+                            <a href="/" target="_blank" data-zanim="{" delay":0.2}"="">
+                                <div class=" text-center d-flex align-items-center flex-center" style="font-size: 2rem">
+                                    <span class="w-100 fa fa-linkedin"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col mt-4 " style="min-height: 350px">
+                    <div class="pb-4 h-100 radius-secondary teams">
+                        <img class="mb-4 radius-tr-secondary radius-tl-secondary" style="max-width:200px; max-height: 200px" src="images/1655397839_Muhammad_Sukma_Alam.jpeg" alt="Profile Picture">
+                        <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                            <div class="overflow-hidden">
+                                <span data-zanim="{" delay":0}"="" style="font-size: 1rem; font-weight: 700; color:#2a3855">M Sukma Alam</span>
+                            </div>
+                            <div class="overflow-hidden mt-3">
+                                <h6 class="fw-400 color-7" data-zanim="{" delay":0.1}"="">Head of Chapter</h6>
+                            </div>
+                            
+                        </div>
+                        <div class="linkedin-team overflow-hidden">
+                            <a href="/" target="_blank" data-zanim="{" delay":0.2}"="">
+                                <div class=" text-center d-flex align-items-center flex-center" style="font-size: 2rem">
+                                    <span class="w-100 fa fa-linkedin"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col mt-4 " style="min-height: 350px">
+                    <div class="pb-4 h-100 radius-secondary teams">
+                        <img class="mb-4 radius-tr-secondary radius-tl-secondary" style="max-width:200px; max-height: 200px" src="images/1655397914_rafif_abdus_salam.png" alt="Profile Picture">
+                        <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                            <div class="overflow-hidden">
+                                <span data-zanim="{" delay":0}"="" style="font-size: 1rem; font-weight: 700; color:#2a3855">Rafif Abdus Salam</span>
+                            </div>
+                            <div class="overflow-hidden mt-3">
+                                <h6 class="fw-400 color-7" data-zanim="{" delay":0.1}"="">Head of Partner &amp; Engagement</h6>
+                            </div>
+                            
+                        </div>
+                        <div class="linkedin-team overflow-hidden">
+                            <a href="/" target="_blank" data-zanim="{" delay":0.2}"="">
+                                <div class=" text-center d-flex align-items-center flex-center" style="font-size: 2rem">
+                                    <span class="w-100 fa fa-linkedin"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col mt-4 " style="min-height: 350px">
+                    <div class="pb-4 h-100 radius-secondary teams">
+                        <img class="mb-4 radius-tr-secondary radius-tl-secondary" style="max-width:200px; max-height: 200px" src="images/1655397985_Shinta_Prima_Astuti.jpg" alt="Profile Picture">
+                        <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                            <div class="overflow-hidden">
+                                <span data-zanim="{" delay":0}"="" style="font-size: 1rem; font-weight: 700; color:#2a3855">Shinta Prima Astuti</span>
+                            </div>
+                            <div class="overflow-hidden mt-3">
+                                <h6 class="fw-400 color-7" data-zanim="{" delay":0.1}"="">Head of People</h6>
+                            </div>
+                            
+                        </div>
+                        <div class="linkedin-team overflow-hidden">
+                            <a href="/" target="_blank" data-zanim="{" delay":0.2}"="">
+                                <div class=" text-center d-flex align-items-center flex-center" style="font-size: 2rem">
+                                    <span class="w-100 fa fa-linkedin"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col mt-4 " style="min-height: 350px">
+                    <div class="pb-4 h-100 radius-secondary teams">
+                        <img class="mb-4 radius-tr-secondary radius-tl-secondary" style="max-width:200px; max-height: 200px" src="images/1655398070_Aldy_Febrian.jpg" alt="Profile Picture">
+                        <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                            <div class="overflow-hidden">
+                                <span data-zanim="{" delay":0}"="" style="font-size: 1rem; font-weight: 700; color:#2a3855">Aldy Nur Febrian</span>
+                            </div>
+                            <div class="overflow-hidden mt-3">
+                                <h6 class="fw-400 color-7" data-zanim="{" delay":0.1}"="">Head of Communication &amp; Publication</h6>
+                            </div>
+                            
+                        </div>
+                        <div class="linkedin-team overflow-hidden">
+                            <a href="/" target="_blank" data-zanim="{" delay":0.2}"="">
+                                <div class=" text-center d-flex align-items-center flex-center" style="font-size: 2rem">
+                                    <span class="w-100 fa fa-linkedin"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col mt-4 " style="min-height: 350px">
+                    <div class="pb-4 h-100 radius-secondary teams">
+                        <img class="mb-4 radius-tr-secondary radius-tl-secondary" style="max-width:200px; max-height: 200px" src="images/1666107659_WhatsApp_Image_2022-10-18_at_20.57.42.jpeg" alt="Profile Picture">
+                        <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                            <div class="overflow-hidden">
+                                <span data-zanim="{" delay":0}"="" style="font-size: 1rem; font-weight: 700; color:#2a3855">Riris Rahma Alifia</span>
+                            </div>
+                            <div class="overflow-hidden mt-3">
+                                <h6 class="fw-400 color-7" data-zanim="{" delay":0.1}"="">Head of Technology</h6>
+                            </div>
+                            
+                        </div>
+                        <div class="linkedin-team overflow-hidden">
+                            <a href="/" target="_blank" data-zanim="{" delay":0.2}"="">
+                                <div class=" text-center d-flex align-items-center flex-center" style="font-size: 2rem">
+                                    <span class="w-100 fa fa-linkedin"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col mt-4 " style="min-height: 350px">
+                    <div class="pb-4 h-100 radius-secondary teams">
+                        <img class="mb-4 radius-tr-secondary radius-tl-secondary" style="max-width:200px; max-height: 200px" src="images/1655437299_Nadya_Husna.png" alt="Profile Picture">
+                        <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                            <div class="overflow-hidden">
+                                <span data-zanim="{" delay":0}"="" style="font-size: 1rem; font-weight: 700; color:#2a3855">Nadya Asanul Husna</span>
+                            </div>
+                            <div class="overflow-hidden mt-3">
+                                <h6 class="fw-400 color-7" data-zanim="{" delay":0.1}"="">Head of GA &amp; Finance</h6>
+                            </div>
+                            
+                        </div>
+                        <div class="linkedin-team overflow-hidden">
+                            <a href="/" target="_blank" data-zanim="{" delay":0.2}"="">
+                                <div class=" text-center d-flex align-items-center flex-center" style="font-size: 2rem">
+                                    <span class="w-100 fa fa-linkedin"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                            </div>
+            
+
+        </div>
+                <div class="row" style="display: flex; flex-flow: column">
+            
+            <div class="division mt-4 text-center propercase">BOARD OF ADVISOR</div>
+            <div class="row">
+                
+                <div class="col mt-4 " style="min-height: 350px">
+                    <div class="pb-4 h-100 radius-secondary teams">
+                        <img class="mb-4 radius-tr-secondary radius-tl-secondary" style="max-width:200px; max-height: 200px" src="images/1609078587_Prasetya_Dwicahya.jpg" alt="Profile Picture">
+                        <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                            <div class="overflow-hidden">
+                                <span data-zanim="{" delay":0}"="" style="font-size: 1rem; font-weight: 700; color:#2a3855">Prasetya Dwicahya</span>
+                            </div>
+                            <div class="overflow-hidden mt-3">
+                                <h6 class="fw-400 color-7" data-zanim="{" delay":0.1}"="">Advisor</h6>
+                            </div>
+                            
+                        </div>
+                        <div class="linkedin-team overflow-hidden">
+                            <a href="/" target="_blank" data-zanim="{" delay":0.2}"="">
+                                <div class=" text-center d-flex align-items-center flex-center" style="font-size: 2rem">
+                                    <span class="w-100 fa fa-linkedin"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col mt-4 " style="min-height: 350px">
+                    <div class="pb-4 h-100 radius-secondary teams">
+                        <img class="mb-4 radius-tr-secondary radius-tl-secondary" style="max-width:200px; max-height: 200px" src="images/1609078617_Wahyuddin_Bara.jpg" alt="Profile Picture">
+                        <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                            <div class="overflow-hidden">
+                                <span data-zanim="{" delay":0}"="" style="font-size: 1rem; font-weight: 700; color:#2a3855">Wahyuddin Bara</span>
+                            </div>
+                            <div class="overflow-hidden mt-3">
+                                <h6 class="fw-400 color-7" data-zanim="{" delay":0.1}"="">Advisor</h6>
+                            </div>
+                            
+                        </div>
+                        <div class="linkedin-team overflow-hidden">
+                            <a href="/" target="_blank" data-zanim="{" delay":0.2}"="">
+                                <div class=" text-center d-flex align-items-center flex-center" style="font-size: 2rem">
+                                    <span class="w-100 fa fa-linkedin"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col mt-4 " style="min-height: 350px">
+                    <div class="pb-4 h-100 radius-secondary teams">
+                        <img class="mb-4 radius-tr-secondary radius-tl-secondary" style="max-width:200px; max-height: 200px" src="images/1609565214_WhatsApp_Image_2020-12-31_at_21.47.47.jpeg" alt="Profile Picture">
+                        <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                            <div class="overflow-hidden">
+                                <span data-zanim="{" delay":0}"="" style="font-size: 1rem; font-weight: 700; color:#2a3855">Fajar Jaman</span>
+                            </div>
+                            <div class="overflow-hidden mt-3">
+                                <h6 class="fw-400 color-7" data-zanim="{" delay":0.1}"="">Advisor</h6>
+                            </div>
+                            
+                        </div>
+                        <div class="linkedin-team overflow-hidden">
+                            <a href="/" target="_blank" data-zanim="{" delay":0.2}"="">
+                                <div class=" text-center d-flex align-items-center flex-center" style="font-size: 2rem">
+                                    <span class="w-100 fa fa-linkedin"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                            </div>
+            
+
+        </div>
+                <!--/.row-->
+    </div>
+    <!--/.container-->
+</section>
+
+    <style>
+    .medsos a:not(:first-child) {
+        margin-left: 1.5rem;
+    }
+
+    .medsos .col-auto {
+        background: radial-gradient(#020000, #771b1b00)
+    }
+
+    .headquarter p {
+        color: white;
+    }
+
+    @media  only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        .no-gutters {
+            margin-right: 0 !important;
+        }
+
+        .medsos a:last-child {
+            margin-left: 0 !important
+        }
+    }
+</style>
+
+<section style="background-color: #1d273c; padding: 2rem 0">
+    
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="background-primary color-white p-5 p-lg-6 radius-secondary mt-4" style="background-image:url(images/world-map-dark.png );background-position: 50% 20px;
+                        background-repeat: no-repeat;background-size: contain;">
+                    <h4 class="color-white fs-1 fs-lg-2 mb-1">Headquarter</h4>
+                    <div class="color-white mt-4 headquarter"><p class="p1" style="margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: &quot;Helvetica Neue&quot;;">RAV Office</p><p class="p1" style="margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: &quot;Helvetica Neue&quot;;">Graha Mampang Lt 3 Suites 305</p><p class="p1" style="margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: &quot;Helvetica Neue&quot;;">Jl. Mampang Prapatan Raya No 100<br>Jakarta Selatan 12760</p></div>
+
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="background-primary color-white p-5 p-lg-6 radius-secondary mt-4" style="
+                background: red url(http://localhost/YAH_new/YAH/public/frontend/assets/images/YAH/1.png );
+                background-position: right;
+                background-repeat: no-repeat;
+                background-size: inherit;
+                
+                ">
+                    <h4 class="color-white fs-1 fs-lg-2 mb-1">Our Social Media</h4>
+
+                    <div style="display:flex; flex-flow:wrap" class="medsos mt-4">
+
+                        <a href="/" target="_blank">
+                            <div class="row mb-3 align-items-center no-gutters">
+                                <div class="col-auto">
+                                    <div class=" text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
+                                        <span class="w-100 fa fa-git color-white"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="/" target="_blank">
+                            <div class="row mb-3 align-items-center no-gutters">
+                                <div class="col-auto">
+                                    <div class=" text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
+                                        <span class="w-100 fa fa-twitter color-white"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="/" target="_blank">
+                            <div class="row mb-3 align-items-center no-gutters">
+                                <div class="col-auto">
+                                    <div class=" text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
+                                        <span class="w-100 fa fa-facebook color-white"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="/" target="_blank">
+                            <div class="row mb-3 align-items-center no-gutters">
+                                <div class="col-auto">
+                                    <div class=" text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
+                                        <span class="w-100 fa fa-linkedin color-white"></span></div>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="/" target="_blank">
+                            <div class="row mb-3 align-items-center no-gutters">
+                                <div class="col-auto">
+                                    <div class=" text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
+                                        <span class="w-100 fa fa-instagram color-white"></span></div>
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/.container-->
+</section>
+<section class="background-primary text-center py-4">
+    <div class="container">
+        <div class="row align-items-center" style="opacity: 0.85;">
+
+            <div class="col-sm-12 mt-3 mt-sm-0 text-center">
+                <p class="color-white lh-6 mb-0 fw-600">© Copyrights © 2019 All Rights Reserved by Alamsyah Hanafiah
+                    Indonesia.</p>
+            </div>
+
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/.container-->
+</section>    <!-- Custom JS -->
+      </main>
+
+  <style>
+    #return-to-top {
+      position: fixed;
+      z-index: 1000;
+      bottom: 20px;
+      right: 20px;
+      background: rgb(0, 0, 0);
+      background: rgb(3, 153, 60);
+      width: 50px;
+      height: 50px;
+      display: block;
+      text-decoration: none;
+      -webkit-border-radius: 35px;
+      -moz-border-radius: 35px;
+      border-radius: 35px;
+      display: none;
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+
+    #return-to-top i {
+      color: #fff;
+      margin: 0;
+      position: relative;
+
+      left: 19px;
+      top: 12px;
+      font-size: 19px;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+
+    #return-to-top:hover {
+      background: rgba(3, 153, 60, 0.9);
+    }
+
+    #return-to-top:hover i {
+      color: #fff;
+      top: 5px;
+    }
+  </style>
+  <a href="/" id="return-to-top"><i class="fa fa-arrow-up"></i></a>
+  <script>
+    $(window).scroll(function () {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+      $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+      $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+  });
+  $('#return-to-top').click(function () {      // When arrow is clicked
+    $('body,html').animate({
+      scrollTop: 0                       // Scroll to top of body
+    }, 500);
+  });
+  </script>
+  <script src="js/zanimation.js"></script>
+
+
+</body></html>

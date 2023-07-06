@@ -1,0 +1,1368 @@
+<!DOCTYPE html><html lang="en-US"><head>
+
+  <meta charset="utf-8" content="">
+  <meta http-equiv="X-UA-Compatible" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <!--  -->
+  <!--    Document Title-->
+  <!-- =============================================-->
+  <title>Yayasan Alamsyah Hanafiah</title>
+  <meta name="csrf-token" content="">
+  <!--  -->
+  <!--    Favicons-->
+  <!--    =============================================-->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/YAH_logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/YAH_logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/YAH_logo.png">
+  <link rel="shortcut icon" type="image/x-icon" href="images/YAH_logo.png">
+  <link rel="manifest" href="https://yah.or.id/img/YAH_logo.png">
+  <link rel="mask-icon" href="images/YAH_logo.png" color="#5bbad5">
+  <meta name="msapplication-TileImage" content="">
+  <meta name="theme-color" content="">
+  <!--  -->
+  <!--    Stylesheets-->
+  <!--    =============================================-->
+  <!-- Default stylesheets-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Template specific stylesheets-->
+  <link href="css/loaders.min.css" rel="stylesheet">
+  <link href="css/css.css" rel="stylesheet">
+  <link href="css/iconsmind.css" rel="stylesheet">
+  <link href="css/ionicons.min.css" rel="stylesheet">
+  <link href="css/hamburgers.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/owl.theme.default.min.css" rel="stylesheet">
+
+  <link href="css/remodal.css" rel="stylesheet">
+  <link href="css/remodal-default-theme.css" rel="stylesheet">
+  <link href="css/flexslider.css" rel="stylesheet">
+  <link href="css/lightbox.css" rel="stylesheet">
+  <!-- Main stylesheet and color file-->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+
+  <link href="css/sweetalert2.min.css" rel="stylesheet">
+
+  
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+
+  
+
+  <!-- Custom CSS -->
+  <style>
+    .flexslider {
+        margin-top: 60px;
+    }
+
+    .visi-misi_font p {
+        color: white;
+    }
+
+
+    #my-insta-feed {
+        max-width: 1080px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            display: flex;
+            align-items: center;
+            position: relative;
+            width: 50%;
+            background: white;
+
+            @media  only screen and (min-width: $lg) {
+                width: 25%;
+            }
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+    .partner-item {
+        height: 350px;
+        background-color: #fff;
+        margin-right: 2rem;
+        box-shadow: 0 0 12px 0 rgba(0, 0, 0, .1);
+        text-align: center;
+        width: 80%;
+        position: relative;
+    }
+
+    .partner-item__wrapper {
+        padding: 30px 0 0;
+    }
+
+    .partner-item__image {
+        position: relative;
+        /* margin-top: 1rem; */
+        /* position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 50%; */
+        /* bottom: 50%; */
+    }
+
+    .partner-item__image img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .partner-item:hover .partner-item__bottom {
+        bottom: 0;
+        transition: bottom .5s
+    }
+
+    .partner-item__button {
+        display: block;
+        display: block;
+        width: 100%;
+        background: #293755;
+        text-align: center;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    .partner-item__button i {
+        text-align: center;
+        color: white;
+    }
+
+    .partner-item__header {
+        width: 100%;
+        display: block;
+        line-height: 1.2;
+        height: 33px;
+        margin-bottom: 1.2rem;
+        overflow: hidden;
+        color: #001946;
+        font-size: 1.4rem;
+
+        text-transform: uppercase;
+    }
+
+    .partner-item__bottom {
+        position: absolute;
+        /* right: 0; */
+        bottom: 0;
+        /* bottom: -20%; */
+        /* transition: bottom .5s */
+        /* left: 0; */
+    }
+
+    .partner-item__bottom .icon {
+        width: 70px;
+        height: 50px;
+        background: #293755;
+    }
+
+    .icon i {
+        margin-top: 10%;
+        font-size: 30px;
+        color: white;
+    }
+
+    .slick-slide img {
+        display: inline !important;
+    }
+
+    /* .slick-next,
+    .slick-prev {
+        background: #2a3855;
+    } */
+
+    .slick-next:hover,
+    .slick-prev:hover {
+        background: #0c111b;
+    }
+    .slick-next:hover, .slick-prev:hover {
+    background: transparent;
+}
+
+    .slick-next:before,
+    .slick-prev:before{
+        color: #293755;
+    }
+    .forum {
+        display: flex;
+    }
+
+    .forum-wrapper {
+        padding: 1em;
+        border-bottom: 1px solid #e9e9e9;
+        /* display: flex; */
+        /* align-items: center; */
+        min-height: 125px;
+
+    }
+
+    .forum-statistic {
+        flex: 1 0 0px;
+        text-align: right;
+        display: flex;
+        flex-flow: column;
+        font-size: 10px;
+    }
+
+    .categories {
+        display: flex;
+    }
+
+    .category {
+        padding: 0.2rem;
+        font-size: 8px;
+        display: block;
+        margin-right: 5px;
+    }
+
+    .forum-desc {
+        display: flex;
+        padding: 1em;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .forum-image {
+        background-repeat: space;
+        background-size: cover;
+        background-position: center;
+        float: left;
+        margin-right: 0.75rem;
+        margin-left: 0.25rem;
+        border-radius: 100%;
+        background-color: #bdbdbd;
+        height: 3rem;
+        width: 3rem;
+        font-size: 2rem;
+        line-height: 2.25rem;
+        background-repeat: space;
+        background-size: cover;
+        background-position: center;
+    }
+
+    @media  only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        .container-partner {
+            width: 95%;
+        }
+
+        .slick-prev {
+            left: 20px;
+        }
+
+        .slick-next {
+            right: 20px;
+        }
+    }
+</style>
+
+  <!--    JavaScripts-->
+  <!--    =============================================-->
+
+
+  <script>
+    var host = ROOTSITE = "https://yah.or.id";
+        var host = ROOTSITE2 = "https://yah.or.id/backend";
+  </script>
+
+  <script src="js/modernizr.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  
+  <script src="js/popper.min.js" crossorigin="anonymous">
+  </script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/TweenMax.min.js"></script>
+  <script src="js/ScrollToPlugin.min.js"></script>
+  <script src="js/CustomEase.min.js"></script>
+  <script src="js/config.js"></script>
+
+
+
+
+  <script src="js/remodal.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src="js/sweetalert2.all.min.js"></script>
+  <script src="js/sweet-alert.init.js"></script>
+  <script src="js/parsley.js"></script>
+  <script src="js/id.js"></script>
+
+  <script src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script>
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+        });
+  </script>
+</head>
+
+<body data-spy="scroll" data-target=".inner-link" data-offset="60">
+
+  <main>
+    
+    <div class="loading"></div>
+
+    <style>
+    @media  only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        .header-nav {
+            padding-left: 0 !important;
+        }
+    }
+</style>
+
+<div class="sticky-top">
+
+    <section class="background-primary py-3 d-none d-sm-block header-top-section" style="display: block !important">
+        <div class="container header-top">
+            <nav role="navigation">
+                <ul class="header-nav">
+                    <li>contact@yah.or.id</li>
+                    <li>|</li>
+                                        <li> <a href="login.html">Sign In</a></li>
+                                    </ul>
+            </nav>
+        </div>
+        <!--/.container-->
+    </section>
+    <div class="znav-white znav-container navbar-elixir" id="znav-container">
+        <div class="container" style="z-index: 0 !important">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand overflow-hidden pr-3" href="home.html">
+                    <img src="images/YAH_logo.png" width="100vw" alt="" style="max-width: 80% !important">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="hamburger hamburger--emphatic">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav fs-0 fw-700">
+                        <li>
+                            <a href="home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="team.html">Who We Are</a>
+                        </li>
+
+                        <li>
+                            <a href="whatwedo.html">What We Do</a>
+                        </li>
+                        <li>
+                            <!-- <a href="/">News</a> -->
+                            <a href="data-science-indo.html" target="blank">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="contact_1.html">Contact Us</a>
+                        </li>
+                                                <li><a class="d-block" href="joinus.html">Join Us</a></li>
+                                                
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+    <div class="flexslider flexslider-simple  loading" style="min-height: 60vh">
+    <ul class="slides">
+                <li data-zanim-timeline="{}">
+            <section class="py-0">
+                <div>
+                    <div class="background-holder elixir-zanimm-scale" style="background-image:url(images/1574334008_tmOJaBGCZgEChehT5gwk42ir3XIvfabxD4VEW1Np.jpeg );" data-zanimm="{" from":{"opacity":0.1,"filter":"blur(10px)","scale":1.05},"to":{"opacity":1,"filter":"blur(0px)","scale":1}}"="">
+                    </div>
+                    <!--/.background-holder-->
+                    <div class="container">
+                        <div class="row py-8 align-items-center" data-inertia="{" weight":1.5}"="" style="min-height: 60vh">
+                            <div class="col-sm-8 col-lg-7 px-5 px-sm-3">
+                                <div class="overflow-hidden">
+                                    <h1 class="fs-4 fs-md-5 zopacity color-white" data-zanim="{" delay":0}"="">
+                                        Educate</h1>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.row-->
+                </div>
+                <!--/.container-->
+            </section>
+        </li>
+                <li data-zanim-timeline="{}">
+            <section class="py-0">
+                <div>
+                    <div class="background-holder elixir-zanimm-scale" style="background-image:url(images/1574334027_o9vSN8Ow26hearjTxgzI9YI6mu2pBxUego9PsUDO.jpeg );" data-zanimm="{" from":{"opacity":0.1,"filter":"blur(10px)","scale":1.05},"to":{"opacity":1,"filter":"blur(0px)","scale":1}}"="">
+                    </div>
+                    <!--/.background-holder-->
+                    <div class="container">
+                        <div class="row py-8 align-items-center" data-inertia="{" weight":1.5}"="" style="min-height: 60vh">
+                            <div class="col-sm-8 col-lg-7 px-5 px-sm-3">
+                                <div class="overflow-hidden">
+                                    <h1 class="fs-4 fs-md-5 zopacity color-white" data-zanim="{" delay":0}"="">
+                                        Socialize</h1>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.row-->
+                </div>
+                <!--/.container-->
+            </section>
+        </li>
+                <li data-zanim-timeline="{}">
+            <section class="py-0">
+                <div>
+                    <div class="background-holder elixir-zanimm-scale" style="background-image:url(images/1608705867_Ultah_YAH_ke_4_copy.JPG );" data-zanimm="{" from":{"opacity":0.1,"filter":"blur(10px)","scale":1.05},"to":{"opacity":1,"filter":"blur(0px)","scale":1}}"="">
+                    </div>
+                    <!--/.background-holder-->
+                    <div class="container">
+                        <div class="row py-8 align-items-center" data-inertia="{" weight":1.5}"="" style="min-height: 60vh">
+                            <div class="col-sm-8 col-lg-7 px-5 px-sm-3">
+                                <div class="overflow-hidden">
+                                    <h1 class="fs-4 fs-md-5 zopacity color-white" data-zanim="{" delay":0}"="">
+                                        Advocate</h1>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.row-->
+                </div>
+                <!--/.container-->
+            </section>
+        </li>
+            </ul>
+</div>
+
+<section class="background-white  text-center" style="padding: 3rem !important;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-12">
+                
+                <h3 class="color-primary fs-2 fs-lg-3">Welcome to Yayasan Alamsyah Hanafiah</h3>
+                
+                <p><span id="docs-internal-guid-9994a8af-7fff-650b-e36f-6c28c61ee911"></span></p><p dir="ltr" style="text-align: center; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;a platform for social impact innovation with a mission to build collaborative data technology solver ecosystem for social welfare improvement.&quot;}" data-sheets-userformat="{&quot;2&quot;:897,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0}" style="font-size: 18px; font-family: Arial;">A platform for social impact innovation with a mission </span></p><p dir="ltr" style="text-align: center; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;a platform for social impact innovation with a mission to build collaborative data technology solver ecosystem for social welfare improvement.&quot;}" data-sheets-userformat="{&quot;2&quot;:897,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:0,&quot;11&quot;:4,&quot;12&quot;:0}" style="font-size: 18px; font-family: Arial;"><b><i>to build collaborative data technology solver ecosystem for social welfare improvement</i></b></span><br></p>
+                
+                <hr class="short" data-zanim="{" from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}"="" data-zanim-trigger="scroll">
+            </div>
+        </div>
+
+        <!--/.row-->
+    </div>
+    <!--/.container-->
+</section>
+<section class="background-11" style="padding: 3rem !important;">
+    <div class="container">
+        <h3 class="text-center fs-2 fs-md-3">Visi Misi</h3>
+        <hr class="short" data-zanim="{" from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}"="" data-zanim-trigger="scroll">
+        <div class="col">
+            <div class="row" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                <div class="col-lg-6 zopacity mt-3 " data-zanim="{" delay":0}"="">
+                    <div class="background-primary  p-5 p-lg-6  radius-secondary">
+                        <h4 class="color-white fs-1 fs-lg-2 mb-1">Visi</h4>
+                        <span class="color-white visi-misi_font">
+                            <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Building collaborative data technology solver ecosystemfor social welfare improvement&quot;}" data-sheets-userformat="{&quot;2&quot;:769,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0}" style="font-size: 18px; font-family: Arial;">Building collaborative data technology solver ecosystem for social welfare improvement</span><br></p>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-3  zopacity  " data-zanim="{" delay":0}"="">
+                    <div class="p-5 p-lg-6 background-primary radius-secondary">
+                        <h4 class=" color-white fs-1 fs-lg-2 mb-1">Misi</h4>
+                        <span class="color-white visi-misi_font">
+                            <span id="docs-internal-guid-dd6acde2-7fff-0c26-9e5a-ef75d179645f"><ul><li style="text-align: justify; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;- Playground: Equip existing Indonesia Future Workforce from professional and non professional with data technology literacy training skills and data technology playground opportunities\n- Literacy: Develop and expose data literacy knowledge (content) in digital presence and targeted organizations which need data literacy such as public organizations, small medium enterprises (UMKM), non digital private company\n- National Certification: Become a reliable hub partner for increasing and leveraging undeserved groups in Indonesia – especially remote groups, low-income, women and non digital organizations by connecting the data technology them to the demands of employers&quot;}" data-sheets-userformat="{&quot;2&quot;:769,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0}" style="font-size: 18px; font-family: Arial;">Playground: Equip existing Indonesia Future Workforce from professional and non professional with data technology literacy training skills and data technology playground opportunities</span></li><li style="text-align: justify; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;- Playground: Equip existing Indonesia Future Workforce from professional and non professional with data technology literacy training skills and data technology playground opportunities\n- Literacy: Develop and expose data literacy knowledge (content) in digital presence and targeted organizations which need data literacy such as public organizations, small medium enterprises (UMKM), non digital private company\n- National Certification: Become a reliable hub partner for increasing and leveraging undeserved groups in Indonesia – especially remote groups, low-income, women and non digital organizations by connecting the data technology them to the demands of employers&quot;}" data-sheets-userformat="{&quot;2&quot;:769,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0}" style="font-size: 18px; font-family: Arial;">Literacy: Develop and expose data literacy knowledge (content) in digital presence and targeted organizations which need data literacy such as public organizations, small medium enterprises (UMKM), non digital private company</span></li><li style="text-align: justify; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;- Playground: Equip existing Indonesia Future Workforce from professional and non professional with data technology literacy training skills and data technology playground opportunities\n- Literacy: Develop and expose data literacy knowledge (content) in digital presence and targeted organizations which need data literacy such as public organizations, small medium enterprises (UMKM), non digital private company\n- National Certification: Become a reliable hub partner for increasing and leveraging undeserved groups in Indonesia – especially remote groups, low-income, women and non digital organizations by connecting the data technology them to the demands of employers&quot;}" data-sheets-userformat="{&quot;2&quot;:769,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0}" style="font-size: 18px; font-family: Arial;">National Certification: Become a reliable hub partner for increasing and leveraging undeserved groups in Indonesia – especially remote groups, low-income, women and non digital organizations by connecting the data technology them to the demands of employers</span><br></li></ul></span>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row px-lg-8">
+        </div>
+        
+
+
+    <!--/.row-->
+    </div>
+    <!--/.container-->
+</section>
+
+
+
+
+
+<section class="background-10 py-6">
+    <div class="container container-partner">
+        <h5 class="text-center fs-2 fs-md-3 mb-5">Partner List</h5>
+
+        <div class="my-slick">
+            
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1579488717_logo-google-graph.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1579488767_4kYJrUzl_400x400.jpg">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1579488783_1b1e62190f2c71ee72223fcc90bc9e3b245941c1.jpg">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077416_3.MEDIA_PARTNER-INFOKOMPUTER.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077447_6.MEDIA_PARTNER_-teknoevent.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077486_8.media_partner_-_digination.jpg">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077499_9.Media_Partner_detik.com.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077517_11.Media_Partner_FileMagz.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077538_34_89_1450328569_130647538_f.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077607_1200px-BEKRAF.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077621_61421db7039521b5fc7039983885ab25.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077636_50620418_376772009799516_8267183605185249280_o.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077647_Acer-Logo_2011.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077657_antara-logo.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077686_cerita_data.jpg">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077702_Cloudera_logo_New.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077713_Community_Partner__BLOCK71_Black.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077725_Community_Partner_GDG-Jakarta.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077740_data_science_sg_logo.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077759_doku-logo-png-7-Transparent-Images.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077772_ds.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077796_DSW_Camp_Jam_Powered_by_-_E-FISHERY.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077822_DSW_Camp_Jam_Powered_by-_AWS.jpg">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077836_eventmahasiswa.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077850_gnfi.jpg">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077863_google-logo-icon-png-transparent-background-osteopathy-16.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077874_hivos.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077884_HOST_-_UMN_Logo.jpg">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077903_I3.jpg">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077913_ITS.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077922_iykra.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077932_logo_bisma.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077951_logo_katadata.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077962_Logo_Kinetic-01.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077975_logo_perpi.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609077992_logo_teknopedia.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609078043_Logo_UI_%28Universitas_Indonesia%29.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609078064_Logo-beritagar.id.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609078087_LOGO-UTM.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609078101_Lomba_online.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609078113_lpdp.jpg">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609078125_mdec-logo-png.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609078134_narasi.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609078147_OMSFvpBb_400x400.jpg">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609078159_pasfm.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609078168_prasmul_logo_2baris_rgb-2-e1578897668152.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609078184_press-codepolitan--md5--c6cd986bfb1be889708b672e982814e0.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609078200_satudata-padding.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609078212_SPONSOR_-_HOME_CREDIT_INDONESIA_-_BACKGROUND_RED.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609078234_SPONSOR_-_YELLOWFIN.jpg">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609078260_Sponsor_KINETICA.jpg">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609078307_STIS.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609078317_techinasia.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609078326_tempo_logo.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609078339_UI_Data_Club.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609078348_UII.png">
+
+
+                </div>
+
+            </div> 
+            <div class="item" style="display: flex; flex-flow: column;align-items: center">
+                
+
+                <div class="partner-item__image">
+                    <img src="images/1609078361_YOT-NEW-HITAM.png">
+
+
+                </div>
+
+            </div> 
+        </div>
+        <div class="text-center mt-5">
+            <a class="btn btn-primary" href="contact.html"> Be Our Partner</a>
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/.container-->
+</section>
+
+
+<script>
+    $(document).ready(function(){
+                $('.my-slick').slick({
+                    dots: false,
+                    infinite: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    responsive: [
+                        {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                        },
+                        {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                        },
+                        {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                        }
+                        // You can unslick at a given breakpoint now by adding:
+                        // settings: "unslick"
+                        // instead of a settings object
+                    ]
+                });
+
+              
+            });
+    $(document).ready(function(){
+        $('.my-slick-ig').slick({
+            dots: false,
+                    infinite: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    responsive: [
+                        {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                        },
+                        {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                        },
+                        {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                        }
+                        // You can unslick at a given breakpoint now by adding:
+                        // settings: "unslick"
+                        // instead of a settings object
+                    ]
+                });
+
+              
+    });
+
+    
+</script>
+
+    <style>
+    .medsos a:not(:first-child) {
+        margin-left: 1.5rem;
+    }
+
+    .medsos .col-auto {
+        background: radial-gradient(#020000, #771b1b00)
+    }
+
+    .headquarter p {
+        color: white;
+    }
+
+    @media  only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        .no-gutters {
+            margin-right: 0 !important;
+        }
+
+        .medsos a:last-child {
+            margin-left: 0 !important
+        }
+    }
+</style>
+
+<section style="background-color: #1d273c; padding: 2rem 0">
+    
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="background-primary color-white p-5 p-lg-6 radius-secondary mt-4" style="background-image:url(images/world-map-dark.png );background-position: 50% 20px;
+                        background-repeat: no-repeat;background-size: contain;">
+                    <h4 class="color-white fs-1 fs-lg-2 mb-1">Headquarter</h4>
+                    <div class="color-white mt-4 headquarter"><p class="p1" style="margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: &quot;Helvetica Neue&quot;;">RAV Office</p><p class="p1" style="margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: &quot;Helvetica Neue&quot;;">Graha Mampang Lt 3 Suites 305</p><p class="p1" style="margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: &quot;Helvetica Neue&quot;;">Jl. Mampang Prapatan Raya No 100<br>Jakarta Selatan 12760</p></div>
+
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="background-primary color-white p-5 p-lg-6 radius-secondary mt-4" style="
+                background: red url(http://localhost/YAH_new/YAH/public/frontend/assets/images/YAH/1.png );
+                background-position: right;
+                background-repeat: no-repeat;
+                background-size: inherit;
+                
+                ">
+                    <h4 class="color-white fs-1 fs-lg-2 mb-1">Our Social Media</h4>
+
+                    <div style="display:flex; flex-flow:wrap" class="medsos mt-4">
+
+                        <a href="datascienceid.html" target="_blank">
+                            <div class="row mb-3 align-items-center no-gutters">
+                                <div class="col-auto">
+                                    <div class=" text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
+                                        <span class="w-100 fa fa-git color-white"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="DataScienceIndo.html" target="_blank">
+                            <div class="row mb-3 align-items-center no-gutters">
+                                <div class="col-auto">
+                                    <div class=" text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
+                                        <span class="w-100 fa fa-twitter color-white"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="unsupportedbrowser.html" target="_blank">
+                            <div class="row mb-3 align-items-center no-gutters">
+                                <div class="col-auto">
+                                    <div class=" text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
+                                        <span class="w-100 fa fa-facebook color-white"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="data-science-indonesia.html" target="_blank">
+                            <div class="row mb-3 align-items-center no-gutters">
+                                <div class="col-auto">
+                                    <div class=" text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
+                                        <span class="w-100 fa fa-linkedin color-white"></span></div>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="unsupportedbrowser.html" target="_blank">
+                            <div class="row mb-3 align-items-center no-gutters">
+                                <div class="col-auto">
+                                    <div class=" text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
+                                        <span class="w-100 fa fa-instagram color-white"></span></div>
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/.container-->
+</section>
+<section class="background-primary text-center py-4">
+    <div class="container">
+        <div class="row align-items-center" style="opacity: 0.85;">
+
+            <div class="col-sm-12 mt-3 mt-sm-0 text-center">
+                <p class="color-white lh-6 mb-0 fw-600">© Copyrights © 2019 All Rights Reserved by Alamsyah Hanafiah
+                    Indonesia.</p>
+            </div>
+
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/.container-->
+</section>    <!-- Custom JS -->
+      </main>
+
+  <style>
+    #return-to-top {
+      position: fixed;
+      z-index: 1000;
+      bottom: 20px;
+      right: 20px;
+      background: rgb(0, 0, 0);
+      background: rgb(3, 153, 60);
+      width: 50px;
+      height: 50px;
+      display: block;
+      text-decoration: none;
+      -webkit-border-radius: 35px;
+      -moz-border-radius: 35px;
+      border-radius: 35px;
+      display: none;
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+
+    #return-to-top i {
+      color: #fff;
+      margin: 0;
+      position: relative;
+
+      left: 19px;
+      top: 12px;
+      font-size: 19px;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+
+    #return-to-top:hover {
+      background: rgba(3, 153, 60, 0.9);
+    }
+
+    #return-to-top:hover i {
+      color: #fff;
+      top: 5px;
+    }
+  </style>
+  <a href="/" id="return-to-top"><i class="fa fa-arrow-up"></i></a>
+  <script>
+    $(window).scroll(function () {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+      $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+      $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+  });
+  $('#return-to-top').click(function () {      // When arrow is clicked
+    $('body,html').animate({
+      scrollTop: 0                       // Scroll to top of body
+    }, 500);
+  });
+  </script>
+  <script src="js/zanimation.js"></script>
+
+
+</body></html>
