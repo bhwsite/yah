@@ -1,0 +1,15 @@
+
+label.error, .parsley-required, .parsley-errors, .parsley-length, .parsley-equalto, .parsley-type {
+    color: #e60808;
+}
+input.parsley-error, textarea.form-control.parsley-error, select.parsley-error, ul.parsley-errors-list:nth-child(1) {
+    border: 1px solid #e60808 !important;
+}
+input.error, input.error:focus {
+    border: 1px solid #e60808;
+}
+.alert-danger, .alert-danger > message {
+    color: #721c24 !important;
+    background-color: #f8d7da !important;
+    border-color: #f5c6cb !important;
+}
